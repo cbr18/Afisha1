@@ -1,0 +1,33 @@
+<div class="places-container">
+  <h1>Места проведения мероприятий</h1>
+
+  <div *ngIf="isLoading" class="loading-indicator">
+    <span>Загрузка...</span>
+  </div>
+
+  <div *ngIf="error" class="error-message">
+    {{ error }}
+  </div>
+  <button (click)="addPlace()" (keyup.N)="addPlace()">Добавить</button>
+  <div *ngIf="!isLoading && !error">
+    <div *ngIf="places.length === 0" class="empty-state">
+      <p>Список мест пуст.</p>
+    </div>
+
+    <div *ngIf="places.length > 0" class="places-list">
+      <app-place-card
+        *ngFor="let place of places; trackBy: trackById"
+        [place]="place"
+      >
+      </app-place-card>
+    </div>
+
+    <app-pagination
+      [totalItems]="totalItems"
+      [pageSize]="pageSize"
+      [currentPage]="currentPage"
+      (pageChanged)="onPageChanged($event)"
+    >
+    </app-pagination>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>Добавление новой встречи</h2>
+
+  <div *ngIf="loading">Загрузка...</div>
+
+  <div *ngIf="error">
+    <p>Произошла ошибка: {{ errorMessage }}</p>
+    <button (click)="onCancel()">Вернуться</button>
+  </div>
+
+  <app-meeting-form
+    *ngIf="!loading && !error"
+    [meeting]="newMeeting"
+    submitButtonText="Создать встречу"
+    (formSubmit)="onCreateMeeting($event)"
+    (formCancel)="onCancel()"
+  >
+  </app-meeting-form>
+</div>

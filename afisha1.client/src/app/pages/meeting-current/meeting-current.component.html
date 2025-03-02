@@ -1,0 +1,12 @@
+<div *ngIf="meeting">
+  <h3>{{ meeting.name }}</h3>
+  <p>{{ meeting.description }}</p>
+  <div class="meeting-actions">
+    <button (click)="editMeeting()" (keyup.enter)="editMeeting()">
+      Редактировать
+    </button>
+    <button (click)="deleteMeeting()" class="danger-button">Удалить</button>
+  </div>
+</div>
+
+<div *ngIf="!meeting">Загружаем данные...</div>

@@ -1,0 +1,13 @@
+<div class="meeting-card" (click)="openDescription()">
+  <h3>{{ meeting.name }}</h3>
+  <p>
+    {{ meeting.place.name }}
+  </p>
+  <p>
+    {{ meeting.description }}
+  </p>
+  <ng-template #shortDescription>
+    <p>{{ formattedDescription }}</p>
+  </ng-template>
+  <button (click)="openDescription()">Подробнее</button>
+</div>

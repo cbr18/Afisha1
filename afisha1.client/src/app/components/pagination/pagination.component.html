@@ -1,0 +1,15 @@
+<div class="pagination-container" *ngIf="totalPages > 1">
+  <ul class="pagination">
+    <li [class.disabled]="currentPage === 1">
+      <a (click)="goToPreviousPage()" aria-label="Предыдущая"> &laquo; </a>
+    </li>
+
+    <li *ngFor="let page of pages" [class.active]="page === currentPage">
+      <a (click)="goToPage(page)">{{ page }}</a>
+    </li>
+
+    <li [class.disabled]="currentPage === totalPages">
+      <a (click)="goToNextPage()" aria-label="Следующая"> &raquo; </a>
+    </li>
+  </ul>
+</div>

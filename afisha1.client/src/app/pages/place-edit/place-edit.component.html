@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>Редактирование места</h2>
+
+  <div *ngIf="loading">Загрузка...</div>
+
+  <div *ngIf="error">
+    <p>Произошла ошибка.</p>
+    <button (click)="onCancel()">Вернуться</button>
+  </div>
+
+  <app-place-form
+    *ngIf="!loading && !error && place"
+    [place]="place"
+    submitButtonText="Сохранить изменения"
+    (formSubmit)="onSavePlace($event)"
+    (formCancel)="onCancel()"
+  >
+  </app-place-form>
+</div>

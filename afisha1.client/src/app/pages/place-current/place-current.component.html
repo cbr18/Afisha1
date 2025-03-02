@@ -1,0 +1,12 @@
+<div *ngIf="place">
+  <h3>{{ place.name }}</h3>
+  <p>{{ place.description }}</p>
+  <div class="place-actions">
+    <button (click)="editPlace()" (keyup.enter)="editPlace()">
+      Редактировать
+    </button>
+    <button (click)="deletePlace()" class="danger-button">Удалить</button>
+  </div>
+</div>
+
+<div *ngIf="!place">Загружаем данные...</div>

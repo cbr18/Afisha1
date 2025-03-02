@@ -1,0 +1,10 @@
+<div class="place-card" (click)="openDescription()">
+  <h3>{{ place.name }}</h3>
+  <p>
+    {{ place.description }}
+  </p>
+  <ng-template #shortDescription>
+    <p>{{ formattedDescription }}</p>
+  </ng-template>
+  <button (click)="openDescription()">Подробнее</button>
+</div>

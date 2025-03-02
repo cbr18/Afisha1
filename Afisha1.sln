@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "afisha1.client", "afisha1.client\afisha1.client.esproj", "{8C25B7D9-4452-88AF-C683-58FF81DBCC30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Afisha1.Server", "Afisha1.Server\Afisha1.Server.csproj", "{745D8A82-DCD6-4D2D-872B-F0687544C0B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C25B7D9-4452-88AF-C683-58FF81DBCC30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C25B7D9-4452-88AF-C683-58FF81DBCC30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C25B7D9-4452-88AF-C683-58FF81DBCC30}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8C25B7D9-4452-88AF-C683-58FF81DBCC30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C25B7D9-4452-88AF-C683-58FF81DBCC30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C25B7D9-4452-88AF-C683-58FF81DBCC30}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{745D8A82-DCD6-4D2D-872B-F0687544C0B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{745D8A82-DCD6-4D2D-872B-F0687544C0B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{745D8A82-DCD6-4D2D-872B-F0687544C0B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{745D8A82-DCD6-4D2D-872B-F0687544C0B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20958BDA-D69E-40B3-9765-FB6294F0E2F8}
+	EndGlobalSection
+EndGlobal
