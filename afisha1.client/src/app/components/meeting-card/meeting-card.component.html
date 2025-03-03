@@ -1,7 +1,7 @@
 <div class="meeting-card" (click)="openDescription()">
   <h3>{{ meeting.name }}</h3>
   <p>
-    {{ meeting.place.name }}
+    {{ meeting.place?.name }}
   </p>
   <p>
     {{ meeting.description }}
