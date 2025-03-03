@@ -1,7 +1,7 @@
-<div *ngIf="meeting">
-  <h3>{{ meeting.name }}</h3>
+<div *ngIf="meeting" class="container">
+  <h2>{{ meeting.name }}</h2>
   <p>{{ meeting.description }}</p>
-  <div class="meeting-actions">
+  <div>
     <button (click)="editMeeting()" (keyup.enter)="editMeeting()">
       Редактировать
     </button>

@@ -1,7 +1,7 @@
-<div *ngIf="place">
-  <h3>{{ place.name }}</h3>
+<div *ngIf="place" class="container">
+  <h2>{{ place.name }}</h2>
   <p>{{ place.description }}</p>
-  <div class="place-actions">
+  <div>
     <button (click)="editPlace()" (keyup.enter)="editPlace()">
       Редактировать
     </button>
